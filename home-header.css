@@ -1,0 +1,82 @@
+.home-top{
+      height: 100vh;
+      background: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.6)
+      ), url(./assets/bg-imgg3.jpg);
+      background-position: center;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .header{
+      padding: 10px 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: whitesmoke;
+
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+    }
+
+    .header h2{
+      margin: 0;
+    }
+
+    .header ul{
+      list-style: none;
+      display: flex;
+      gap: 10px;     
+    }
+
+    .header ul li a{
+      text-decoration: none;
+      color: whitesmoke;
+      transition: 0.2s;
+    }
+
+    .header ul li a:hover{
+      color: #11345c;
+    }
+
+    .center-side{
+      margin: auto; /*center vertically & horizontally*/
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    .center-side button{
+      padding: 7px 15px;
+      border: none;
+      background-color: transparent;
+      border: 1px solid whitesmoke;
+      color: whitesmoke;
+      font-size: 15px;
+      border-radius: 3px;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .center-side button:hover{
+      background-color: #11345c; 
+      border: 1px solid #11345c;
+      color: whitesmoke;
+    }
+
+
+    /********* On Different Screens *********/
+
+    /* small screens 0-500px */
+    @media screen and (max-width: 530px) {
+      .header{
+        flex-direction: column;
+      }
+    }
