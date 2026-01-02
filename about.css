@@ -1,7 +1,6 @@
 /**************** Section1 (about) ****************/
 .section1 {
-  background: linear-gradient(
-      rgba(17, 52, 92, 0.2));
+  background-color: #fff;
   padding: 50px 30px;
 }
 

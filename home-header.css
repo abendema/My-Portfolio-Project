@@ -15,8 +15,8 @@
     }
 
     .header{
-      padding: 10px 30px;
-      background-color: rgba(0, 0, 0, 0.5);
+      padding: 4px 30px;
+      background-color: rgba(0, 0, 0, 0.6);
       display: flex;
       justify-content: space-between;
       align-items: center;

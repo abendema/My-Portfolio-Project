@@ -1,0 +1,106 @@
+/**************** Section3 (Resume) ****************/
+.section3{
+  background-color: #fff;
+  padding: 50px 30px;
+}
+
+.section3 p,
+.section3 h3,
+.section3 h4{
+  margin: 5px 0;
+}
+
+.resume-container{
+  max-width: 1200px; 
+  margin: 50px auto 0 auto;
+  margin-top: 50px;
+}
+
+/****** Container 1 ******/
+.container1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.item div{
+  height: 100%; /* make the div fill the grid item's full height */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(228, 224, 224);
+}
+
+.item .year{
+  font-size: 13px;
+  padding: 0 5px;
+  background-color: #11345c;
+  color: white;
+  border-radius: 3px;
+}
+
+.item .describe{
+  color: #cc5942;
+}
+
+/****** Container 2 ******/
+
+.container2{
+  margin-top: 50px;  /* space from container1 */
+  padding-top: 40px; /* space inside container2 for its content */
+}
+
+.container2-inner{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.container2-inner .progress{
+  height: 100%;
+}
+
+.container2-inner .label{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container2-inner .progress progress{
+  width: 100%;
+  height: 15px;
+  border-radius: 8px;
+  overflow: hidden;  /* for rounded corners */
+  background-color: #eee; /* sets the color of the empty part for firefox*/
+}
+
+/* Firefox - filled part */
+.container2-inner .progress progress::-moz-progress-bar{
+  background-color: #11345c;
+  border-radius: 8px;
+}
+
+/* Chrome, Safari, Edge - empty part */
+.container2-inner .progress progress::-webkit-progress-bar{
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+/* Chrome, Safari, Edge - filled part */
+.container2-inner .progress progress::-webkit-progress-value{
+  background-color: #11345c;
+  border-radius: 8px;
+}
+
+
+/****** SMALL SCREENS ******/
+@media screen and (max-width: 700px) {
+  .container1,
+  .container2-inner{
+    grid-template-columns: 1fr;
+  }
+  
+}

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./home-header.css">
   <link rel="stylesheet" href="./about.css">
   <link rel="stylesheet" href="./services.css">
+  <link rel="stylesheet" href="./resume.css">
 
 
 </head>
@@ -40,6 +41,11 @@
 
   <!-- Section 1 -->
   <section class="section1" id="about">
+    <div class="title-section">
+      <p>ABOUT</p>
+      <h2>About Me</h2>
+    </div>
+
     <div class="section1-inner1">
       <div class="left-side">
         <h2>I am <span>Dema Ben Jabr</span>, a Developer</h2>
@@ -80,63 +86,57 @@
     </div>
   </section>
 
-
   <!-- Section 2 -->
   <section class="section2" id="services">
     <div class="title-section">
       <p>SERVICES</p>
-      <h2>
-        What I Do?
-        <div class="underline"></div>
-      </h2>
+      <h2>What I Do?</h2>
     </div>
 
 
     <div class="skills-section">
-      <div class="skill-container">
-        <div class="skill">
-          <div class="icon">
-            <i class="fa-solid fa-palette fa-w"></i>
-          </div>
-          <div>
-            <h3>Graphic Design</h3>
-            <p>Creating visually appealing designs with creativity, color, typography, and layout to communicate ideas
-              effectively.</p>
-          </div>
+      <div class="skill">
+        <div class="icon">
+          <i class="fa-solid fa-palette fa-w"></i>
         </div>
-
-        <div class="skill">
-          <div class="icon">
-            <i class="fa-solid fa-display fa-w"></i>
-          </div>
-          <div>
-            <h3>Web Design</h3>
-            <p>Building responsive, user-friendly websites with clean code, modern layouts, and engaging visual
-              elements.
-            </p>
-          </div>
+        <div>
+          <h3>Graphic Design</h3>
+          <p>Creating visually appealing designs with creativity, color, typography, and layout to communicate ideas
+            effectively.</p>
         </div>
+      </div>
 
-        <div class="skill">
-          <div class="icon">
-            <i class="fa-solid fa-pen-ruler fa-w"></i>
-          </div>
-          <div>
-            <h3>UI/UX Design</h3>
-            <p>Designing intuitive interfaces and seamless experiences to make apps and websites easy to use.</p>
-          </div>
+      <div class="skill">
+        <div class="icon">
+          <i class="fa-solid fa-display fa-w"></i>
         </div>
+        <div>
+          <h3>Web Design</h3>
+          <p>Building responsive, user-friendly websites with clean code, modern layouts, and engaging visual
+            elements.
+          </p>
+        </div>
+      </div>
 
-        <div class="skill">
-          <div class="icon">
-            <i class="fa-solid fa-paintbrush fa-w"></i>
-          </div>
-          <div>
-            <h3>App Design & Develop</h3>
-            <p>Creating mobile apps with attractive design, smooth functionality, and efficient performance across
-              devices.
-            </p>
-          </div>
+      <div class="skill">
+        <div class="icon">
+          <i class="fa-solid fa-pen-ruler fa-w"></i>
+        </div>
+        <div>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive interfaces and seamless experiences to make apps and websites easy to use.</p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="icon">
+          <i class="fa-solid fa-paintbrush fa-w"></i>
+        </div>
+        <div>
+          <h3>App Design & Develop</h3>
+          <p>Creating mobile apps with attractive design, smooth functionality, and efficient performance across
+            devices.
+          </p>
         </div>
       </div>
     </div>
@@ -144,6 +144,106 @@
 
   <!-- Section 3 -->
   <section class="section3" id="resume">
+    <div class="title-section">
+      <p>SUMMARY</p>
+      <h2>Resume</h2>
+    </div>
+
+    <div class="resume-container">
+
+      <div class="container1">
+        <div class="item">
+          <h3>My Online Courses</h3>
+          <div>
+            <p class="year">2025 - Present</p>
+            <h4>Web Development</h4>
+            <p class="describe">Advanced HTML & CSS, JavaScript, Angular</p>
+            <p>
+              Completed advanced HTML and CSS courses, and currently studying
+              JavaScript and Angular through online learning platforms.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="item">
+          <h3>My Career</h3>
+          <div>
+            <p class="year">2025 - Present</p>
+            <h4>Aspiring Full Stack Developer</h4>
+            <p class="describe">Personal Projects</p>
+            <p>
+              Currently focusing on frontend web development using Angular, with plans to study
+              backend development using C# and .NET.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3>My Experience</h3>
+          <div>
+            <p class="year">2024 - 2025</p>
+            <h4>iOS App Developer (Graduation Project)</h4>
+            <p class="describe">ElderPro - Personal Safety App</p>
+            <p>
+              Developed an iOS personal safety application focusing on elderly care,
+              emergency features, and user-friendly interface design.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="item">
+          <h3>My Education</h3>
+          <div>
+            <p class="year">2021 - 2025</p>
+            <h4>Computer Science</h4>
+            <p class="describe">University of Windsor</p>
+            <p>Software engineering principles, problem-solving, and real-world application development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2">
+        <h3>My Skills</h3>
+
+        <div class="container2-inner">
+          <div class="progress">
+            <div class="label">
+              <label for="html">HTML</label>
+              <span>99%</span>
+            </div>
+            <progress id="html" value="99" max="100"></progress>
+          </div>
+
+          <div class="progress">
+            <div class="label">
+              <label for="css">CSS</label>
+              <span>90%</span>
+            </div>
+            <progress id="css" value="90" max="100"></progress>
+          </div>
+
+          <div class="progress">
+            <div class="label">
+              <label for="js">JavaScript</label>
+              <span>70%</span>
+            </div>
+            <progress id="js" value="70" max="100"></progress>
+          </div>
+
+          <div class="progress">
+            <div class="label">
+              <label for="angular">Angular</label>
+              <span>50%</span>
+            </div>
+            <progress id="angular" value="50" max="100"></progress>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 
   </section>
 </body>
