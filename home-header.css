@@ -58,6 +58,16 @@
       text-align: center;
       color: whitesmoke;
     }
+    .center-side h1{
+      font-size: 40px;
+    }
+    
+    .center-side p{
+      font-size: 35px;
+      font-family: "Tangerine", cursive;
+      font-weight: 700;
+
+    }
 
     .center-side button{
       padding: 7px 15px;
