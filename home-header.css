@@ -94,5 +94,10 @@
     @media screen and (max-width: 700px) {
       .header{
         flex-direction: column;
+        white-space: nowrap;
+      }
+      .header ul{
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
