@@ -7,7 +7,7 @@
 
 /****** Titles ******/
 .title-section {
-  padding: 20px 0 50px 0; /* top 20px, bottom 50px */
+  padding: 20px 10px 50px 10px; /* top 20px, bottom 50px */
   text-align: center;
   position: relative; /* needed for absolute positioning of h2 */
   z-index: 1;
@@ -39,8 +39,8 @@
 /****** skills section ******/
 
 .skills-section {
-  padding-bottom: 50px;
-  margin: 50px auto 0 auto;
+  padding-top: 40px;
+  margin: 0 auto;
   max-width: 1200px; /* stops columns from stretching too wide */
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -54,7 +54,7 @@
 
 .skills-section p {
   margin: 0;
-  margin-top: 8px;
+  padding-top: 8px;
 }
 
 .skill {

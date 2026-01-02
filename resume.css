@@ -7,17 +7,20 @@
 .section3 p,
 .section3 h3,
 .section3 h4{
-  margin: 5px 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .resume-container{
   max-width: 1200px; 
-  margin: 50px auto 0 auto;
-  margin-top: 50px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 /****** Container 1 ******/
 .container1{
+  padding-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
@@ -48,12 +51,11 @@
 /****** Container 2 ******/
 
 .container2{
-  margin-top: 50px;  /* space from container1 */
   padding-top: 40px; /* space inside container2 for its content */
 }
 
 .container2-inner{
-  margin-top: 15px;
+  padding-top: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;

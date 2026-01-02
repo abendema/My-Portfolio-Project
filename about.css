@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+/****** Content Section ******/
+.content-section{
+  padding: 20px;
+}
 
 /****** Section1-inner1 ******/
 .section1-inner1 {
@@ -61,12 +65,13 @@
 
 .section1-inner1 .right-side button:hover {
   filter: brightness(1.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /****** Section1-inner2 ******/
 .section1-inner2 {
-  margin: 40px auto 0 auto;
+  padding-top: 40px;
+  margin: 0 auto;
   max-width: 1200px;
   display: flex;
   justify-content: space-around;
