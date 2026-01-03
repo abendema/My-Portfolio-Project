@@ -1,0 +1,117 @@
+/**************** Section4 (portfolio) ****************/
+.section4 {
+  background-color: #fff;
+  padding: 50px 30px;
+}
+
+.gallery {
+  padding-top: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* center it */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.img-1 {
+  grid-area: 1/1/2/2;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.img-2 {
+  grid-area: 2/1/4/2;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.img-3 {
+  grid-area: 1/2/3/3;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.img-4 {
+  grid-area: 3/2/4/3;
+  position: relative;
+  z-index: 0;
+  cursor: not-allowed;
+}
+
+.img-5 {
+  grid-area: 1/3/2/4;
+  position: relative;
+  z-index: 0;
+  cursor: not-allowed;
+}
+
+.img-6 {
+  grid-area: 2/3/4/4;
+  position: relative;
+  z-index: 0;
+  cursor: not-allowed;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/******* Overlay ******/
+.gallery .overlay p,
+.gallery .overlay h4 {
+  margin: 0;
+  color: whitesmoke;
+}
+
+.gallery .overlay h4 {
+  font-family: "Sirivennela", sans-serif;
+  font-size: clamp(18px, 3vw, 30px);
+}
+
+.gallery .overlay p {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bold;
+  font-size: clamp(12px, 1.5vw, 18px);
+}
+
+.gallery .overlay p .easy{
+  color: #28a745; /* green for easy */
+}
+
+.gallery .overlay p .medium{
+  color: #fd7e14; /* orange for medium */
+}
+
+.gallery .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.section4 .gallery .img-1:hover .overlay,
+.section4 .gallery .img-2:hover .overlay,
+.section4 .gallery .img-3:hover .overlay,
+.section4 .gallery .img-4:hover .overlay,
+.section4 .gallery .img-5:hover .overlay,
+.section4 .gallery .img-6:hover .overlay{
+  opacity: 1;
+}
