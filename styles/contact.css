@@ -19,17 +19,12 @@
   max-width: 1200px;
   display: grid;
   grid-template-columns: 20% 1fr;
+  align-items: start;
   column-gap: 40px;
   row-gap: 40px;
 }
 
 /******* Left side *******/
-.inner-left-side {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .inner-left-side ul {
   line-height: 30px;
 }
@@ -41,13 +36,6 @@
 
 .inner-left-side ul li i {
   color: #2d71bf;
-}
-
-.inner-left-side .top-left {
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
 /******* Right side *******/
