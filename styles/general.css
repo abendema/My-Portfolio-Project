@@ -9,3 +9,35 @@ body{
 p{
   line-height: 23px;
 }
+
+
+/****** Page Titles ******/
+.title-section {
+  padding: 20px 10px 50px 10px; /* top 20px, bottom 50px */
+  text-align: center;
+  position: relative; /* needed for absolute positioning of h2 */
+  z-index: 1;
+}
+
+.title-section p {
+  margin: 0;
+  font-size: 5rem;
+  color: rgba(189, 201, 214, 0.14);
+  user-select: none; /* prevents text from being selected */
+  pointer-events: none; /* optional.. prevents clicks or hovers affecting it */
+
+  /* "SERVICES" background text stay perfectly centered regardless of the container's padding. */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-section h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%; /*moves it down by 50%*/
+  left: 50%; /*moves it right by 50%*/
+  transform: translate(-50%, -50%); /*centers it move it left by 50% and up by 50%*/
+  z-index: 2;
+}
