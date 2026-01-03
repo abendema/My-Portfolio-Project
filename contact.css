@@ -18,12 +18,18 @@
   margin: 0 auto;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 20% 1fr;
   column-gap: 40px;
   row-gap: 40px;
 }
 
 /******* Left side *******/
+.inner-left-side{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .inner-left-side ul {
   line-height: 30px;
 }
@@ -38,9 +44,11 @@
 }
 
 .inner-left-side .top-left{
-  padding-left: 17px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-
 /******* Right side *******/
 
 .inner-right-side form {
@@ -92,7 +100,15 @@
 
 /******* SMALL SCREENS *******/
 
+/* Small screens */
 @media screen and (max-width: 700px) {
+  .section5-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* middle screens 700px - 900px */
+@media screen and (min-width: 701px) and (max-width: 900px){
   .section5-inner {
     grid-template-columns: 1fr;
   }

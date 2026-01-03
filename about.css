@@ -54,7 +54,7 @@
   border: none;
 }
 
-.section1-inner1 .right-side button {
+.download-btn{
   padding: 10px 20px;
   border: none;
   background-color: #11345c;
@@ -63,7 +63,7 @@
   transition: 0.2s;
 }
 
-.section1-inner1 .right-side button:hover {
+.download-btn:hover {
   filter: brightness(1.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
