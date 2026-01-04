@@ -82,8 +82,7 @@
 }
 
 .inner-right-side .button-container button:hover {
-  filter: brightness(1.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #296198;
 }
 
 

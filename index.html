@@ -11,7 +11,9 @@
     href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Sirivennela&family=Tangerine:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./styles/general.css">
-  <link rel="stylesheet" href="./styles/home-header.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/side-bar.css">
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/services.css">
   <link rel="stylesheet" href="./styles/resume.css">
@@ -21,424 +23,465 @@
 </head>
 
 <body>
-  <!-- Home Top -->
-  <div class="home-top" id="home">
-    <div class="header">
-      <div>
-        <i class="fa-solid fa-heart fa-beat-fade" style="--fa-animation-duration: 1.3s;"></i>
-        <h2>Dema</h2>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <i class="fa-solid fa-bars menu-icon" onclick="
+        toggleElement('side-bar');
+      "></i>
+      <h2>Dema</h2>
+    </div>
+  </header>
+
+  <!-- SideBar -->
+  <nav class="side-bar" id="side-bar">
+    <ul>
+      <li>
+        <a href="#home">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <i class="fa-solid fa-address-card"></i>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#services">
+          <i class="fa-solid fa-briefcase"></i>
+          Services
+        </a>
+      </li>
+      <li>
+        <a href="#resume">
+          <i class="fa-solid fa-file"></i>
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="#portfolio">
+          <i class="fa-solid fa-folder-open"></i>
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <i class="fa-solid fa-address-book"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- Main -->
+  <main>
+    <!-- Home -->
+    <div class="home-top" id="home">
+      <div class="center-side">
+        <p>Welcome</p>
+        <h1>I am a Developer.</h1>
+        <p>based in Canada, Windsor</p>
+        <button>Hire me</button>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="section1" id="about">
+      <div class="title-section">
+        <p>ABOUT</p>
+        <h2>About Me</h2>
       </div>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">What I Do</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="center-side">
-      <p>Welcome</p>
-      <h1>I am a Developer.</h1>
-      <p>based in Canada, Windsor</p>
-      <button>Hire me</button>
-    </div>
-  </div>
-
-  <!-- Section 1 -->
-  <section class="section1" id="about">
-    <div class="title-section">
-      <p>ABOUT</p>
-      <h2>About Me</h2>
-    </div>
-
-    <div class="content-section">
-      <div class="section1-inner1">
-        <div class="left-side">
-          <h2>I am <span>Dema Ben Jabr</span>, a Developer</h2>
-          <p>
-            I graduated from the University of Windsor in Canada in June 2025, and I am passionate about building
-            dynamic
-            and user-friendly web applications. Since graduation, I have focused on becoming a full
-            Stack developer, specializing in frontend development with Angular and backend with C# and .NET. I am
-            continuously learning, practicing, and creating projects that help me grow and stay up to date with the
-            latest
-            technologies. Recently, I received a job offer as a Frontend Developer at Ultimate Solution Company in
-            Cairo,
-            Egypt, and I'm excited to contribute to developing responsive, modern web solutions that deliver real value
-            to
-            users.
-          </p>
+      <div class="content-section">
+        <div class="section1-inner1">
+          <div class="left-side">
+            <h2>I am <span>Dema Ben Jabr</span>, a Developer</h2>
+            <p>
+              I graduated from the University of Windsor in Canada in June 2025, and I am passionate about building
+              dynamic
+              and user-friendly web applications. Since graduation, I have focused on becoming a full
+              Stack developer, specializing in frontend development with Angular and backend with C# and .NET. I am
+              continuously learning, practicing, and creating projects that help me grow and stay up to date with the
+              latest
+              technologies. Recently, I received a job offer as a Frontend Developer at Ultimate Solution Company in
+              Cairo,
+              Egypt, and I'm excited to contribute to developing responsive, modern web solutions that deliver real
+              value
+              to
+              users.
+            </p>
+          </div>
+          <div class="right-side">
+            <p><span>Name:</span> Dema Ben Jabr</p>
+            <p><span>Email:</span> <a href="mailto:demajjj123@gmail.com">demajjj123@gmail.com</a></p>
+            <p><span>Age:</span> 28</p>
+            <p><span>Location:</span> Canada, Windsor</p>
+            <a href="./MyResume/dema-resume-2026-web.pdf" download="">
+              <button class="download-btn">Download CV</button>
+            </a>
+          </div>
         </div>
-        <div class="right-side">
-          <p><span>Name:</span> Dema Ben Jabr</p>
-          <p><span>Email:</span> <a href="mailto:demajjj123@gmail.com">demajjj123@gmail.com</a></p>
-          <p><span>Age:</span> 28</p>
-          <p><span>Location:</span> Canada, Windsor</p>
-          <a href="./MyResume/dema-resume-2026-web.pdf" download="">
-            <button class="download-btn">Download CV</button>
+
+        <div class="section1-inner2">
+          <div class="text">
+            <p class="number">4</p>
+            <p>Years University</p>
+          </div>
+          <div class="text">
+            <p class="number">1<i class="fa-solid fa-plus"></i></p>
+            <p>Years Self-Learning</p>
+          </div>
+          <div class="text">
+            <p class="number">1<i class="fa-solid fa-plus"></i></p>
+            <p>Years Experience</p>
+          </div>
+          <div class="text">
+            <p class="number">10<i class="fa-solid fa-plus"></i></p>
+            <p>Projects Done</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section2" id="services">
+      <div class="title-section">
+        <p>SERVICES</p>
+        <h2>What I Do?</h2>
+      </div>
+
+
+      <div class="skills-section">
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-palette fa-w"></i>
+          </div>
+          <div>
+            <h3>Graphic Design</h3>
+            <p>Creating visually appealing designs with creativity, color, typography, and layout to communicate ideas
+              effectively.</p>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-display fa-w"></i>
+          </div>
+          <div>
+            <h3>Web Design</h3>
+            <p>Building responsive, user-friendly websites with clean code, modern layouts, and engaging visual
+              elements.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-pen-ruler fa-w"></i>
+          </div>
+          <div>
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive interfaces and seamless experiences to make apps and websites easy to use.</p>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-paintbrush fa-w"></i>
+          </div>
+          <div>
+            <h3>App Design & Develop</h3>
+            <p>Creating mobile apps with attractive design, smooth functionality, and efficient performance across
+              devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section3" id="resume">
+      <div class="title-section">
+        <p>SUMMARY</p>
+        <h2>Resume</h2>
+      </div>
+
+      <div class="resume-container">
+
+        <div class="container1">
+          <div class="item">
+            <h3>My Online Courses</h3>
+            <div>
+              <p class="year">2025 - Present</p>
+              <h4>Web Development</h4>
+              <p class="describe">Advanced HTML & CSS, JavaScript, Angular</p>
+              <p>
+                Completed advanced HTML and CSS courses, and currently studying
+                JavaScript and Angular through online learning platforms.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="item">
+            <h3>My Career</h3>
+            <div>
+              <p class="year">2025 - Present</p>
+              <h4>Aspiring Full Stack Developer</h4>
+              <p class="describe">Personal Projects</p>
+              <p>
+                Currently focusing on frontend web development using Angular, with plans to study
+                backend development using C# and .NET.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <h3>My Experience</h3>
+            <div>
+              <p class="year">2024 - 2025</p>
+              <h4>iOS App Developer (Graduation Project)</h4>
+              <p class="describe">ElderPro - Personal Safety App</p>
+              <p>
+                Developed an iOS personal safety application focusing on elderly care,
+                emergency features, and user-friendly interface design.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <h3>My Education</h3>
+            <div>
+              <p class="year">2021 - 2025</p>
+              <h4>Computer Science</h4>
+              <p class="describe">University of Windsor</p>
+              <p>Software engineering principles, problem-solving, and real-world application development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <h3>My Skills</h3>
+
+          <div class="container2-inner">
+            <div class="progress">
+              <div class="label">
+                <label for="html-css">HTML/CSS</label>
+                <span>95%</span>
+              </div>
+              <progress id="html-css" value="95" max="100"></progress>
+            </div>
+
+            <div class="progress">
+              <div class="label">
+                <label for="bootstrap">Bootstrap</label>
+                <span>80%</span>
+              </div>
+              <progress id="bootstrap" value="80" max="100"></progress>
+            </div>
+
+            <div class="progress">
+              <div class="label">
+                <label for="web-design">Responsive Web Design</label>
+                <span>85%</span>
+              </div>
+              <progress id="web-design" value="85" max="100"></progress>
+            </div>
+
+            <div class="progress">
+              <div class="label">
+                <label for="seo">SEO Fundamentals</label>
+                <span>55%</span>
+              </div>
+              <progress id="seo" value="55" max="100"></progress>
+            </div>
+
+            <div class="progress">
+              <div class="label">
+                <label for="js">JavaScript</label>
+                <span>70%</span>
+              </div>
+              <progress id="js" value="70" max="100"></progress>
+            </div>
+
+            <div class="progress">
+              <div class="label">
+                <label for="angular">Angular Js</label>
+                <span>50%</span>
+              </div>
+              <progress id="angular" value="50" max="100"></progress>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section4" id="portfolio">
+      <div class="title-section">
+        <p>PORTFOLIO</p>
+        <h2>My Projects</h2>
+      </div>
+
+      <div class="gallery">
+        <div class="img-1">
+          <a href="https://abendema.github.io/Rock-Paper-Scissors/" target="_blank">
+            <img src="./assets/img1.png" alt="digital">
+            <div class="overlay">
+              <h4>Project 1</h4>
+              <p>RPS Game</p>
+              <p><span class="easy">Easy</span> - (HTML&#8226;CSS&#8226;JS)</p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Finished
+              </p>
+            </div> <!--Overlay-->
           </a>
         </div>
-      </div>
 
-      <div class="section1-inner2">
-        <div class="text">
-          <p class="number">4</p>
-          <p>Years University</p>
-        </div>
-        <div class="text">
-          <p class="number">1<i class="fa-solid fa-plus"></i></p>
-          <p>Years Self-Learning</p>
-        </div>
-        <div class="text">
-          <p class="number">1<i class="fa-solid fa-plus"></i></p>
-          <p>Years Experience</p>
-        </div>
-        <div class="text">
-          <p class="number">10<i class="fa-solid fa-plus"></i></p>
-          <p>Projects Done</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 2 -->
-  <section class="section2" id="services">
-    <div class="title-section">
-      <p>SERVICES</p>
-      <h2>What I Do?</h2>
-    </div>
-
-
-    <div class="skills-section">
-      <div class="skill">
-        <div class="icon">
-          <i class="fa-solid fa-palette fa-w"></i>
-        </div>
-        <div>
-          <h3>Graphic Design</h3>
-          <p>Creating visually appealing designs with creativity, color, typography, and layout to communicate ideas
-            effectively.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="icon">
-          <i class="fa-solid fa-display fa-w"></i>
-        </div>
-        <div>
-          <h3>Web Design</h3>
-          <p>Building responsive, user-friendly websites with clean code, modern layouts, and engaging visual
-            elements.
-          </p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="icon">
-          <i class="fa-solid fa-pen-ruler fa-w"></i>
-        </div>
-        <div>
-          <h3>UI/UX Design</h3>
-          <p>Designing intuitive interfaces and seamless experiences to make apps and websites easy to use.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="icon">
-          <i class="fa-solid fa-paintbrush fa-w"></i>
-        </div>
-        <div>
-          <h3>App Design & Develop</h3>
-          <p>Creating mobile apps with attractive design, smooth functionality, and efficient performance across
-            devices.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 3 -->
-  <section class="section3" id="resume">
-    <div class="title-section">
-      <p>SUMMARY</p>
-      <h2>Resume</h2>
-    </div>
-
-    <div class="resume-container">
-
-      <div class="container1">
-        <div class="item">
-          <h3>My Online Courses</h3>
-          <div>
-            <p class="year">2025 - Present</p>
-            <h4>Web Development</h4>
-            <p class="describe">Advanced HTML & CSS, JavaScript, Angular</p>
-            <p>
-              Completed advanced HTML and CSS courses, and currently studying
-              JavaScript and Angular through online learning platforms.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="item">
-          <h3>My Career</h3>
-          <div>
-            <p class="year">2025 - Present</p>
-            <h4>Aspiring Full Stack Developer</h4>
-            <p class="describe">Personal Projects</p>
-            <p>
-              Currently focusing on frontend web development using Angular, with plans to study
-              backend development using C# and .NET.
-            </p>
-          </div>
-        </div>
-
-        <div class="item">
-          <h3>My Experience</h3>
-          <div>
-            <p class="year">2024 - 2025</p>
-            <h4>iOS App Developer (Graduation Project)</h4>
-            <p class="describe">ElderPro - Personal Safety App</p>
-            <p>
-              Developed an iOS personal safety application focusing on elderly care,
-              emergency features, and user-friendly interface design.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="item">
-          <h3>My Education</h3>
-          <div>
-            <p class="year">2021 - 2025</p>
-            <h4>Computer Science</h4>
-            <p class="describe">University of Windsor</p>
-            <p>Software engineering principles, problem-solving, and real-world application development.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container2">
-        <h3>My Skills</h3>
-
-        <div class="container2-inner">
-          <div class="progress">
-            <div class="label">
-              <label for="html-css">HTML/CSS</label>
-              <span>95%</span>
-            </div>
-            <progress id="html-css" value="95" max="100"></progress>
-          </div>
-
-          <div class="progress">
-            <div class="label">
-              <label for="bootstrap">Bootstrap</label>
-              <span>80%</span>
-            </div>
-            <progress id="bootstrap" value="80" max="100"></progress>
-          </div>
-
-          <div class="progress">
-            <div class="label">
-              <label for="web-design">Responsive Web Design</label>
-              <span>85%</span>
-            </div>
-            <progress id="web-design" value="85" max="100"></progress>
-          </div>
-
-          <div class="progress">
-            <div class="label">
-              <label for="seo">SEO Fundamentals</label>
-              <span>55%</span>
-            </div>
-            <progress id="seo" value="55" max="100"></progress>
-          </div>
-
-          <div class="progress">
-            <div class="label">
-              <label for="js">JavaScript</label>
-              <span>70%</span>
-            </div>
-            <progress id="js" value="70" max="100"></progress>
-          </div>
-
-          <div class="progress">
-            <div class="label">
-              <label for="angular">Angular Js</label>
-              <span>50%</span>
-            </div>
-            <progress id="angular" value="50" max="100"></progress>
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-  <!-- Section 4 -->
-  <section class="section4" id="portfolio">
-    <div class="title-section">
-      <p>PORTFOLIO</p>
-      <h2>My Projects</h2>
-    </div>
-
-    <div class="gallery">
-      <div class="img-1">
-        <a href="https://abendema.github.io/Rock-Paper-Scissors/" target="_blank">
-          <img src="./assets/img1.png" alt="digital">
+        <div class="img-2">
+          <img src="./assets/img2.jpg" alt="digital">
           <div class="overlay">
-            <h4>Project 1</h4>
-            <p>RPS Game</p>
-            <p><span class="easy">Easy</span> - (HTML&#8226;CSS&#8226;JS)</p>
+            <h4>Project 2</h4>
+            <p>Type Test</p>
+            <p><span class="medium">Medium</span> - (HTML&#8226;CSS&#8226;JS)</p>
             <p>
-              <i class="fa-solid fa-check"></i>
-              Finished
+              <i class="fa-solid fa-circle-notch fa-spin"></i>
+              In Progress
             </p>
           </div> <!--Overlay-->
-        </a>
-      </div>
+        </div>
 
-      <div class="img-2">
-        <img src="./assets/img2.jpg" alt="digital">
-        <div class="overlay">
-          <h4>Project 2</h4>
-          <p>Type Test</p>
-          <p><span class="medium">Medium</span> - (HTML&#8226;CSS&#8226;JS)</p>
-          <p>
-            <i class="fa-solid fa-circle-notch fa-spin"></i>
-            In Progress
-          </p>
-        </div> <!--Overlay-->
-      </div>
+        <div class="img-3">
+          <a href="https://abendema.github.io/Family-Bakery-Website/" target="_blank">
+            <img src="./assets/img3.jpg" alt="digital">
+            <div class="overlay">
+              <h4>Project 3</h4>
+              <p>Family Bakery</p>
+              <p><span class="easy">Easy</span> - (HTML&#8226;CSS)</p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Finished
+              </p>
+            </div> <!--Overlay-->
+          </a>
+        </div>
 
-      <div class="img-3">
-        <a href="https://abendema.github.io/Family-Bakery-Website/" target="_blank">
-          <img src="./assets/img3.jpg" alt="digital">
+        <div class="img-4">
+          <img src="./assets/img4.jpg" alt="digital">
           <div class="overlay">
-            <h4>Project 3</h4>
-            <p>Family Bakery</p>
-            <p><span class="easy">Easy</span> - (HTML&#8226;CSS)</p>
+            <h4>Project 4</h4>
             <p>
-              <i class="fa-solid fa-check"></i>
-              Finished
+              <i class="fa-solid fa-cog fa-spin"></i>
+              Coming Soon
             </p>
           </div> <!--Overlay-->
-        </a>
+        </div>
+
+        <div class="img-5">
+          <img src="./assets/img5.jpg" alt="digital">
+          <div class="overlay">
+            <h4>Project 5</h4>
+            <p>
+              <i class="fa-solid fa-cog fa-spin"></i>
+              Coming Soon
+            </p>
+          </div> <!--Overlay-->
+        </div>
+
+        <div class="img-6">
+          <img src="./assets/img6.jpg" alt="digital">
+          <div class="overlay">
+            <h4>Project 6</h4>
+            <p>
+              <i class="fa-solid fa-cog fa-spin"></i>
+              Coming Soon
+            </p>
+          </div> <!--Overlay-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section5" id="contact">
+      <div class="title-section">
+        <p>CONTACT</p>
+        <h2>Get in Touch</h2>
       </div>
 
-      <div class="img-4">
-        <img src="./assets/img4.jpg" alt="digital">
-        <div class="overlay">
-          <h4>Project 4</h4>
-          <p>
-            <i class="fa-solid fa-cog fa-spin"></i>
-            Coming Soon
-          </p>
-        </div> <!--Overlay-->
-      </div>
-
-      <div class="img-5">
-        <img src="./assets/img5.jpg" alt="digital">
-        <div class="overlay">
-          <h4>Project 5</h4>
-          <p>
-            <i class="fa-solid fa-cog fa-spin"></i>
-            Coming Soon
-          </p>
-        </div> <!--Overlay-->
-      </div>
-
-      <div class="img-6">
-        <img src="./assets/img6.jpg" alt="digital">
-        <div class="overlay">
-          <h4>Project 6</h4>
-          <p>
-            <i class="fa-solid fa-cog fa-spin"></i>
-            Coming Soon
-          </p>
-        </div> <!--Overlay-->
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 5 -->
-  <section class="section5" id="contact">
-    <div class="title-section">
-      <p>CONTACT</p>
-      <h2>Get in Touch</h2>
-    </div>
-
-    <div class="section5-inner">
-      <div class="inner-left-side">
-        <h3>Contact Details</h3>
-        <ul class="fa-ul">
-          <li>
-            <span class="fa-li">
-              <i class="fa-solid fa-location-dot"></i>
-            </span>
-            Windsor, ON, Canada
-          </li>
-          <li>
-            <span class="fa-li">
-              <i class="fa-solid fa-phone"></i>
-            </span>
-            222-222-5555
-          </li>
-          <li>
-            <span class="fa-li">
-              <i class="fa-solid fa-fax"></i>
-            </span>
-            000-000-0000
-          </li>
-          <li>
-            <a href="mailto:demajjj123@gmail.com">
+      <div class="section5-inner">
+        <div class="inner-left-side">
+          <h3>Contact Details</h3>
+          <ul class="fa-ul">
+            <li>
               <span class="fa-li">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-location-dot"></i>
               </span>
-              Email Me
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/dema-ben-jabr-64237922b/" target="_blank">
+              Windsor, ON, Canada
+            </li>
+            <li>
               <span class="fa-li">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-solid fa-phone"></i>
               </span>
-              Linkedin Me
-            </a>
-          </li>
-        </ul>
+              222-222-5555
+            </li>
+            <li>
+              <span class="fa-li">
+                <i class="fa-solid fa-fax"></i>
+              </span>
+              000-000-0000
+            </li>
+            <li>
+              <a href="mailto:demajjj123@gmail.com">
+                <span class="fa-li">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                Email Me
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dema-ben-jabr-64237922b/" target="_blank">
+                <span class="fa-li">
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+                Linkedin Me
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inner-right-side">
+          <h3>Drop Me a Message</h3>
+
+          <form action="https://formspree.io/f/xbdlykjy" method="POST">
+
+            <div class="name-email-container">
+              <input type="text" placeholder="Name" name="name" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <textarea name="comment" placeholder="Tell me more about your needs..." rows="10" required></textarea>
+
+
+            <div class="button-container">
+              <button type="submit">Submit</button>
+              <button type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
       </div>
+    </section>
 
-      <div class="inner-right-side">
-        <h3>Drop Me a Message</h3>
-
-        <form action="https://formspree.io/f/xbdlykjy" method="POST">
-
-          <div class="name-email-container">
-            <input type="text" placeholder="Name" name="name" required>
-            <input type="email" name="email" placeholder="Email" required>
-          </div>
-
-          <textarea name="comment" placeholder="Tell me more about your needs..." rows="10" required></textarea>
-
-
-          <div class="button-container">
-            <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
+  </main>
 
   <!-- Footer -->
   <footer>
@@ -452,6 +495,8 @@
     </div>
     <p>Copyright &copy; Dema Ben Jabr</p>
   </footer>
+
+  <script src="side-bar.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+/********* Header *********/
+.header {
+  height: 50px;
+  background-color: #041528;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-container{
+  padding-left: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: whitesmoke;
+}
+
+.header-container h2 {
+  font-family: "Tangerine", cursive;
+  display: inline-block;
+  margin: 0;
+  font-size: 30px;
+  transform: translateY(2px);
+}
+
+.header-container .menu-icon{
+  font-size: 20px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s ease;
+}
+.header-container .menu-icon:hover{
+  transform: scale(1.2);
+}
+

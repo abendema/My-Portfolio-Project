@@ -63,9 +63,8 @@
   transition: 0.2s;
 }
 
-.download-btn:hover {
-  filter: brightness(1.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.download-btn:hover{
+  background-color: #296198;
 }
 
 /****** Section1-inner2 ******/
