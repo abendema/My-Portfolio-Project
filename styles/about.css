@@ -10,7 +10,7 @@
 }
 
 /****** Content Section ******/
-.content-section{
+.content-section {
   padding: 20px;
 }
 
@@ -46,15 +46,15 @@
   border-bottom: 1px solid rgb(195, 190, 190);
 }
 
-.section1-inner1 .right-side p a{
+.section1-inner1 .right-side p a {
   text-decoration: none;
 }
 
-.section1-inner1 .right-side p:last-of-type{
+.section1-inner1 .right-side p:last-of-type {
   border: none;
 }
 
-.download-btn{
+.download-btn {
   padding: 10px 20px;
   border: none;
   background-color: #11345c;
@@ -86,7 +86,8 @@
   gap: 5px;
 
   padding: 20px;
-  border-right: 1px solid rgb(179, 173, 173); /* as vertical separator */
+  border-right: 1px solid rgb(179, 173, 173);
+  /* as vertical separator */
 }
 
 /* Remove vertical separator from last item */
@@ -108,3 +109,9 @@
   font-size: 17px;
 }
 
+@media screen and (max-width: 550px) {
+  /* Remove vertical separator from 3rd item */
+  .section1-inner2 .text:nth-child(3) {
+    border: none;
+  }
+}
