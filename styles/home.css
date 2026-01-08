@@ -22,11 +22,11 @@
 }
 
 .center-side h1 {
-  font-size: 40px;
+  font-size: clamp(20px, 8vw, 40px);
 }
 
 .center-side p {
-  font-size: 35px;
+  font-size: clamp(18px, 7vw, 35px);
   font-family: "Tangerine", cursive;
   font-weight: 700;
 
