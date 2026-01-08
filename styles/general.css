@@ -11,11 +11,9 @@ body{
   font-family: "Roboto Flex", sans-serif;
 }
 
-p{
-  line-height: 23px;
+main p{
+  line-height: 1.6;
 }
-
-
 
 
 /****** Page Titles ******/
