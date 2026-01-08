@@ -8,11 +8,14 @@ html{
 
 body{
   margin: 0;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 p{
   line-height: 23px;
 }
+
+
 
 
 /****** Page Titles ******/
