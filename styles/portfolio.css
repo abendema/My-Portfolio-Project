@@ -19,21 +19,18 @@
   grid-area: 1/1/2/2;
   position: relative;
   z-index: 0;
-  cursor: pointer;
 }
 
 .img-2 {
   grid-area: 2/1/4/2;
   position: relative;
   z-index: 0;
-  cursor: not-allowed;
 }
 
 .img-3 {
   grid-area: 1/2/3/3;
   position: relative;
   z-index: 0;
-  cursor: pointer;
 }
 
 .img-4 {
