@@ -29,7 +29,7 @@
 }
 
 .section1-inner1 .left-side span {
-  color: #11345c;
+  color: #3b7cb8;
 }
 
 .section1-inner1 .right-side {
@@ -48,6 +48,11 @@
 
 .section1-inner1 .right-side p a {
   text-decoration: none;
+  color: #3b7cb8;
+}
+
+.section1-inner1 .right-side p a:hover {
+  text-decoration: underline;
 }
 
 .section1-inner1 .right-side p:last-of-type {

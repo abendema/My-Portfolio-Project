@@ -27,7 +27,7 @@
 
 .center-side p {
   font-size: clamp(18px, 7vw, 35px);
-  font-family: "Tangerine", cursive;
+  font-family: "Tangerine", sans-serif;
   font-weight: 700;
 
 }

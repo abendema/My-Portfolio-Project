@@ -2,10 +2,10 @@
 .side-bar{
   background-color: #041528;
   position: fixed;
-  top: 50px;
+  top: 60px;
   left: 0;
   right: 0;
-  transform: translateY(-110%);
+  transform: translateY(-150%);
   transition: transform 0.5s;
   z-index: 50;
 }

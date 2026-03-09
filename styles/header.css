@@ -1,6 +1,6 @@
 /********* Header *********/
 .header {
-  height: 50px;
+  height: 60px;
   background-color: #041528;
 
   position: fixed;
@@ -22,11 +22,10 @@
 }
 
 .header h2 {
-  font-family: "Tangerine", cursive;
+  font-family: "Tangerine", sans-serif;
   display: inline-block;
   margin: 0;
   font-size: 30px;
-  transform: translateY(2px);
   cursor: pointer;
 }
 
