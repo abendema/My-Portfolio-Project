@@ -39,6 +39,7 @@ main p{
 }
 
 .title-section h2 {
+  color: #041528;
   margin: 0;
   position: absolute;
   top: 50%; /*moves it down by 50%*/
