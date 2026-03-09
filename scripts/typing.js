@@ -14,16 +14,16 @@ function typeEffect() {
     typingElement.textContent = currentText.substring(0, charIndex++);
   }
 
-  let speed = isDeleting ? 120 : 220;
+  let speed = isDeleting ? 70 : 110;
 
   if (!isDeleting && charIndex === currentText.length + 1) {
-    speed = 1200;
+    speed = 1000; // pause after full text
     isDeleting = true;
   } 
   else if (isDeleting && charIndex === 0) {
     isDeleting = false;
     textIndex = (textIndex + 1) % texts.length;
-    speed = 300;
+    speed = 250; // pause before next text
   }
 
   setTimeout(typeEffect, speed);
