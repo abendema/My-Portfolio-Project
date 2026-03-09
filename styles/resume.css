@@ -76,24 +76,24 @@
   height: 15px;
   border-radius: 8px;
   overflow: hidden;  /* for rounded corners */
-  background-color: #eee; /* sets the color of the empty part for firefox*/
+  background-color: #d9d9d9; /* sets the color of the empty part for firefox*/
 }
 
 /* Firefox - filled part */
 .container2-inner .progress progress::-moz-progress-bar{
-  background-color: #11345c;
+  background-color: #1f4a7b;
   border-radius: 8px;
 }
 
 /* Chrome, Safari, Edge - empty part */
 .container2-inner .progress progress::-webkit-progress-bar{
-  background-color: #eee;
+  background-color: #d9d9d9;
   border-radius: 8px;
 }
 
 /* Chrome, Safari, Edge - filled part */
 .container2-inner .progress progress::-webkit-progress-value{
-  background-color: #11345c;
+  background-color: #1f4a7b;
   border-radius: 8px;
 }
 
