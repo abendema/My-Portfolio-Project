@@ -27,11 +27,11 @@ main p{
 .title-section p {
   margin: 0;
   font-size: 5rem;
-  color: rgba(189, 201, 214, 0.14);
+  color: rgba(4, 21, 40, 0.04);
   user-select: none; /* prevents text from being selected */
   pointer-events: none; /* optional.. prevents clicks or hovers affecting it */
 
-  /* "SERVICES" background text stay perfectly centered regardless of the container's padding. */
+  /* background text stay perfectly centered regardless of the container's padding. */
   position: absolute;
   top: 50%;
   left: 50%;
